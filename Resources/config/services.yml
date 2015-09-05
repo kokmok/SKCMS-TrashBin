@@ -1,0 +1,11 @@
+services:
+    skcms_trash_bin.delete_listener:
+        class: SKCMS\TrashBinBundle\Listener\DeleteListener
+        arguments: [@annotation_reader,@skcms_trash_bin.trashConverter]
+        tags:
+            - { name: doctrine.event_listener, event: preRemove }
+    skcms_trash_bin.trashConverter:
+        class: SKCMS\TrashBinBundle\Service\TrashConverter
+#        arguments: [@doctrine.orm.mapping.classmetadatafactory]
+        
+        
