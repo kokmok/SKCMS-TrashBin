@@ -13,8 +13,7 @@ use php composer.phar instead of composer on Windows
 ```
 composer require SKCMS/trashbin-bundle:dev-master
 ```
-### Install Languages, Currencies and countries.
-Set entity trashBinable
+### Set entity trashBinable
 use annotation: 
 ```
 use SKCMS\TrashBinBundle\Annotation\TrashBinable as TrashBinable;
